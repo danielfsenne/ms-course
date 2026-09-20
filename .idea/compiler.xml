@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hr-payroll" />
-        <module name="demo" />
         <module name="hr-eureka-server" />
+        <module name="demo" />
+        <module name="hr-api-gateway-zuul" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="hr-api-gateway-zuul" options="-parameters" />
       <module name="hr-eureka-server" options="-parameters" />
       <module name="hr-payroll" options="-parameters" />
     </option>
