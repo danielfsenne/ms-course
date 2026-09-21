@@ -1,7 +1,7 @@
-services\PaymentService.class
+org\example\entities\Payment.class
 org\example\Main.class
-resources\PaymentResource.class
-entities\Payment.class
-entities\Worker.class
-feignclients\WorkerFeignClient.class
-config\AppConfig.class
+org\example\services\PaymentService.class
+org\example\config\AppConfig.class
+org\example\entities\Worker.class
+org\example\feignclients\WorkerFeignClient.class
+org\example\resources\PaymentResource.class
