@@ -11,6 +11,7 @@
         <module name="hr-eureka-server" />
         <module name="demo" />
         <module name="hr-api-gateway-zuul" />
+        <module name="hr-user" />
       </profile>
     </annotationProcessing>
   </component>
