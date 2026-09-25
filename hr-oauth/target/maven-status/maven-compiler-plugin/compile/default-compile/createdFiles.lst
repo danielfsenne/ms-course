@@ -1,0 +1,8 @@
+org\hruser\config\AuthorizationServerConfig.class
+org\hruser\feingclients\UserFeignClient.class
+org\hruser\services\UserService.class
+org\hruser\entities\User.class
+org\hruser\config\SecurityConfig.class
+org\hruser\Main.class
+org\hruser\resources\UserResource.class
+org\hruser\entities\Role.class

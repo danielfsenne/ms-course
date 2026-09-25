@@ -55,21 +55,11 @@ public class AuthorizationServerConfig {
     public SecurityFilterChain authorizationServerSecurityFilterChain(
             HttpSecurity http) throws Exception {
 
+        OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http);
+
         http
-                .oauth2ResourceServer(authorizationServer -> {
-
-                    http.securityMatcher(
-                            String.valueOf(authorizationServer.disable())
-                    );
-
-                    authorizationServer
-                            .jwt(Customizer.withDefaults());
-                })
-
-                .authorizeHttpRequests(authorize ->
-                        authorize
-                                .anyRequest()
-                                .authenticated()
+                .oauth2ResourceServer(resourceServer ->
+                        resourceServer.jwt(Customizer.withDefaults())
                 )
 
                 .exceptionHandling(exceptions ->
