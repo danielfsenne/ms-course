@@ -50,7 +50,6 @@ public class AuthorizationServerConfig {
     @Value("${oauth.client.secret}")
     private String clientSecret;
 
-
     @Bean
     @Order(1)
     public SecurityFilterChain authorizationServerSecurityFilterChain(
